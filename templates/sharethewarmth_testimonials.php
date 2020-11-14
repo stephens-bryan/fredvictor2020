@@ -70,13 +70,13 @@ function sharethewarmth_testimonials_function( $atts ) {
 
                     <?php } ?>
 
-                    <a href="#ex1" rel="modal:open">Open Modal</a>
+                    <button id="opener">Open Dialog</button>
                 </div>
             <?php } ?>
         </div>
     <?php } ?>
 
-    <div id="ex1" class="modal">
+    <div id="dialog" class="modal">
         <p>Thanks for clicking. That felt good.</p>
         <a href="#" rel="modal:close">Close</a>
     </div>
