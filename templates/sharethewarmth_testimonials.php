@@ -17,16 +17,25 @@ function sharethewarmth_acf_init_block_types() {
 }
 add_action('acf/init', 'sharethewarmth_acf_init_block_types');
 
+function custom_shortcode_scripts() {
+    global $post;
+    if( is_a( $post, 'WP_Post' ) && has_shortcode( $post->post_content, 'fv_testimonials') ) {
+        wp_enqueue_style( 'sharethewarmth_testimonials_css', '//cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css' );
+        wp_enqueue_script( 'sharethewarmth_testimonials_js', '//cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js', array(), '1.0.0', true );
+    }
+}
+add_action( 'wp_enqueue_scripts', 'custom_shortcode_scripts');
+
+
 // [bartag foo="foo-value"]
 function sharethewarmth_testimonials_function( $atts ) {
     ob_start();
-
     if ( have_rows('testimonials', 'options') ) { ?>
-        <div id="fv_testimonial_container">
+        <div id="fv_testimonial_container" class="row">
             <?php while ( have_rows('testimonials', 'options') ) { the_row(); ?>
-                <div class="fv_testimonial row">
+                <div class="fv_testimonial col-6">
 
-                    <?php if (get_sub_field('testimonial_type') == 'video') { ?>
+                    <?php if (get_sub_field('include_media') == 'video') { ?>
 
                         <?php if (get_sub_field('video')) { ?>
                             <div class="embed-container">
@@ -50,22 +59,27 @@ function sharethewarmth_testimonials_function( $atts ) {
 
                                     // Display customized HTML.
                                     // http://i3.ytimg.com/vi/k7l5diHzWuQ/maxresdefault.jpg
-                                    echo $iframe;
                                 ?>
                                 <img src="<?php echo $thumbnail; ?>" alt="">
                             </div>
                         <?php } ?>
 
-                    <?php } else { ?>
+                    <?php } else if (get_sub_field('include_media') == 'image') { ?>
 
                         <img src="<?php echo get_sub_field('image')['url']; ?>" alt="">
 
                     <?php } ?>
 
+                    <a href="#ex1" rel="modal:open">Open Modal</a>
                 </div>
             <?php } ?>
         </div>
     <?php } ?>
+
+    <div id="ex1" class="modal">
+        <p>Thanks for clicking. That felt good.</p>
+        <a href="#" rel="modal:close">Close</a>
+    </div>
 
     <?php return ob_get_clean();
 }
