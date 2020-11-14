@@ -1,3 +1,9 @@
 $red: #e45a20;
 $blue: #408aca;
 $yellow: #d6de5c;
+
+@mixin hide-element {
+    position: absolute;
+    visibility: hidden;
+    left: -10000px;
+}

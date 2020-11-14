@@ -1,0 +1,6 @@
+.woocommerce-shop-page{
+
+    .swp_social_panel{
+        @include hide-element;
+    }
+}
