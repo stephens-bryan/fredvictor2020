@@ -1,6 +1,70 @@
-.woocommerce-shop-page{
+.woocommerce-shop-page {
 
-    .swp_social_panel{
+    // Elements
+    p {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+    }
+
+    // Woocommerce overrides
+    .woocommerce ul.products li.product a img {
+        width: 228px;
+        height: 228px;
+    }
+
+    .woocommerce-loop-product__title {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        color: $black;
+    }
+
+    .woocommerce ul.products li.product .price {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 25px;
+        color: $blue;
+    }
+
+    .woocommerce .products ul,
+    .woocommerce ul.products {
+        display: flex;
+    }
+
+    .woocommerce ul.products li.product,
+    .woocommerce-page ul.products li.product {
+        display: flex;
+        flex-direction: column;
+        width: 33%;
+    }
+
+    .product{
+        .button{
+            @include btn-orange;
+        }
+
+        .button:hover{
+            @include btn-orange-hover;
+        }
+    }
+
+    // Theme overrides
+    .inner-header.show-desktop,
+    .inner-header.show-mobile {
+        height: 180px;
+        background-image: url('../images/shop-background.png') !important;
+    }
+
+    .fv-inner {
+        text-align: center;
+    }
+
+    // Plugin Overrides
+    .swp_social_panel {
         @include hide-element;
     }
 }
