@@ -25,7 +25,7 @@ function fred_victor_user_scripts() {
     wp_enqueue_style( 'fv_jquery-ui-style',  '//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css');
     wp_enqueue_style( 'fred_victor_style',  $plugin_url . "/assets/css/style.css");
 
-    wp_enqueue_script( 'fv_jquery-ui-js',  $plugin_url . "//code.jquery.com/ui/1.12.1/jquery-ui.js" , '', '', true );
+    wp_enqueue_script( 'fv_jquery-ui-js',  "//code.jquery.com/ui/1.12.1/jquery-ui.js" , '', '', true );
     wp_enqueue_script( 'fv_testimonials',  $plugin_url . "/assets/js/testimonials.js" , '', '', true);
 }
 add_action( 'wp_enqueue_scripts', 'fred_victor_user_scripts' );
