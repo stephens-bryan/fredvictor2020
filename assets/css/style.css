@@ -1,3 +1,57 @@
+.woocommerce-shop-page p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+}
+.woocommerce-shop-page .woocommerce ul.products li.product a img {
+  width: 228px;
+  height: 228px;
+}
+.woocommerce-shop-page .woocommerce-loop-product__title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  color: #000000;
+}
+.woocommerce-shop-page .woocommerce ul.products li.product .price {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  color: #408aca;
+}
+.woocommerce-shop-page .woocommerce .products ul,
+.woocommerce-shop-page .woocommerce ul.products {
+  display: flex;
+}
+.woocommerce-shop-page .woocommerce ul.products li.product,
+.woocommerce-shop-page .woocommerce-page ul.products li.product {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+}
+.woocommerce-shop-page .product .button {
+  background: #F48024;
+  color: #fff;
+  border: 2px solid #F48024;
+  border-radius: 50px;
+  transition: all 0.6s ease;
+}
+.woocommerce-shop-page .product .button:hover {
+  background: #fff;
+  color: #F48024;
+  border: 2px solid #F48024;
+}
+.woocommerce-shop-page .inner-header.show-desktop,
+.woocommerce-shop-page .inner-header.show-mobile {
+  height: 180px;
+  background-image: url("../images/shop-background.png") !important;
+}
+.woocommerce-shop-page .fv-inner {
+  text-align: center;
+}
 .woocommerce-shop-page .swp_social_panel {
   position: absolute;
   visibility: hidden;
