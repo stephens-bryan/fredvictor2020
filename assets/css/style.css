@@ -7,6 +7,8 @@
 .woocommerce-shop-page .woocommerce ul.products li.product a img {
   width: 228px;
   height: 228px;
+  margin: auto;
+  object-fit: contain;
 }
 .woocommerce-shop-page .woocommerce-loop-product__title {
   font-family: Roboto;
@@ -22,15 +24,111 @@
   font-size: 25px;
   color: #408aca;
 }
+.woocommerce-shop-page .woocommerce-result-count {
+  width: 50%;
+  text-align: left;
+}
+.woocommerce-shop-page .woocommerce-ordering {
+  width: 50%;
+  text-align: right;
+}
+.woocommerce-shop-page .woocommerce .woocommerce-ordering select {
+  border: 1px solid #DFDFDF;
+  border-radius: 7px;
+  padding: 0.2em;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+}
 .woocommerce-shop-page .woocommerce .products ul,
 .woocommerce-shop-page .woocommerce ul.products {
   display: flex;
+  flex-wrap: wrap;
+  width: 75%;
+}
+.woocommerce-shop-page .single-content .woocommerce.columns-4 {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+.woocommerce-shop-page .single-content .woocommerce.columns-4:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-color: #DFDFDF;
+  height: 1px;
+  width: 100%;
+  top: 2em;
+}
+.woocommerce-shop-page .products.columns-4,
+.woocommerce-shop-page .gift-categories {
+  padding-top: 70px;
+}
+.woocommerce-shop-page .gift-categories {
+  margin: 0;
+  padding-left: 20px;
+  list-style-type: none;
+  text-align: left;
+  width: 25%;
+}
+.woocommerce-shop-page .gift-categories li a,
+.woocommerce-shop-page .gift-categories li a:visited {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  color: #A2A2A2;
+  transition: all 0.6s ease-in;
+  text-decoration: none;
+  font-size: 16px;
+}
+.woocommerce-shop-page .gift-categories li a:hover,
+.woocommerce-shop-page .gift-categories li a:visited:hover {
+  color: #408aca;
+}
+.woocommerce-shop-page .gift-categories li {
+  margin-bottom: 0;
+}
+.woocommerce-shop-page .gift-categories li:not(:last-child) {
+  margin-bottom: 1em;
+}
+.woocommerce-shop-page .gift-categories-title {
+  position: relative;
+  font-family: Zilla Slab;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  color: #F48024;
+  margin-bottom: 1em;
+  display: block;
+}
+.woocommerce-shop-page .gift-categories-title:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-color: #DFDFDF;
+  height: 1px;
+  width: 100%;
+  top: 2em;
 }
 .woocommerce-shop-page .woocommerce ul.products li.product,
 .woocommerce-shop-page .woocommerce-page ul.products li.product {
   display: flex;
   flex-direction: column;
-  width: 33%;
+  width: 29%;
+}
+@media (max-width: 992px) {
+  .woocommerce-shop-page .woocommerce ul.products li.product,
+.woocommerce-shop-page .woocommerce-page ul.products li.product {
+    width: 50% !important;
+  }
+}
+@media (max-width: 768px) {
+  .woocommerce-shop-page .woocommerce ul.products li.product,
+.woocommerce-shop-page .woocommerce-page ul.products li.product {
+    width: 100% !important;
+  }
 }
 .woocommerce-shop-page .product .button {
   background: #F48024;
@@ -38,6 +136,10 @@
   border: 2px solid #F48024;
   border-radius: 50px;
   transition: all 0.6s ease;
+  min-width: 220px;
+  margin: auto;
+  font-weight: 200;
+  font-size: 15px;
 }
 .woocommerce-shop-page .product .button:hover {
   background: #fff;
@@ -51,6 +153,8 @@
 }
 .woocommerce-shop-page .fv-inner {
   text-align: center;
+  max-width: 1160px;
+  width: 100%;
 }
 .woocommerce-shop-page .swp_social_panel {
   position: absolute;
