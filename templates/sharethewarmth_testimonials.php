@@ -17,17 +17,6 @@ function sharethewarmth_acf_init_block_types() {
 }
 add_action('acf/init', 'sharethewarmth_acf_init_block_types');
 
-function custom_shortcode_scripts() {
-    global $post;
-    if( is_a( $post, 'WP_Post' ) && has_shortcode( $post->post_content, 'fv_testimonials') ) {
-        wp_enqueue_style( 'sharethewarmth_testimonials_css', '//cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css' );
-        wp_enqueue_script( 'sharethewarmth_testimonials_js', '//cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js', array(), '1.0.0', true );
-    }
-}
-add_action( 'wp_enqueue_scripts', 'custom_shortcode_scripts');
-
-
-// [bartag foo="foo-value"]
 function sharethewarmth_testimonials_function( $atts ) {
     ob_start();
     if ( have_rows('testimonials', 'options') ) { ?>
@@ -76,9 +65,8 @@ function sharethewarmth_testimonials_function( $atts ) {
         </div>
     <?php } ?>
 
-    <div id="dialog" class="modal">
-        <p>Thanks for clicking. That felt good.</p>
-        <a href="#" rel="modal:close">Close</a>
+    <div id="dialog" title="Basic dialog">
+      <p>This is an animated dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the &apos;x&apos; icon.</p>
     </div>
 
     <?php return ob_get_clean();

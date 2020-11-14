@@ -1,4 +1,5 @@
-$( function() {
+jQuery( function($) {
+    console.log('works!');
     $( "#dialog" ).dialog({
         autoOpen: false,
         show: {
