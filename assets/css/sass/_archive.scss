@@ -12,6 +12,8 @@
     .woocommerce ul.products li.product a img {
         width: 228px;
         height: 228px;
+        margin: auto;
+        object-fit: contain;
     }
 
     .woocommerce-loop-product__title {
@@ -30,24 +32,115 @@
         color: $blue;
     }
 
+    .woocommerce-result-count{
+        width: 50%;
+        text-align: left;
+    }
+
+    .woocommerce-ordering{
+        width: 50%;
+        text-align: right;
+    }
+
+
+    .woocommerce .woocommerce-ordering select {
+        border: 1px solid $grey;
+        border-radius: 7px;
+        padding: 0.2em;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+    }
+
     .woocommerce .products ul,
     .woocommerce ul.products {
         display: flex;
+        flex-wrap: wrap;
+        width: 75%;
+    }
+
+    .single-content .woocommerce.columns-4 {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+
+        &:before {
+            @include short-underline;
+        }
+    }
+
+    .products.columns-4,
+    .gift-categories {
+        padding-top: 70px;
+    }
+
+    .gift-categories {
+        margin: 0;
+        padding-left: 20px;
+        list-style-type: none;
+        text-align: left;
+        width: 25%;
+
+        li a,
+        li a:visited{
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            color: #A2A2A2;
+            transition: all 0.6s ease-in;
+            text-decoration: none;
+            font-size: 16px;
+
+            &:hover{
+                color: $blue;
+            }
+        }
+
+        li{
+            margin-bottom: 0;
+        }
+
+        li:not(:last-child){
+            margin-bottom: 1em;
+        }
+    }
+
+    .gift-categories-title {
+        position: relative;
+        font-family: Zilla Slab;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 25px;
+        color: $orange;
+        margin-bottom: 1em;
+        display: block;
+
+        &:before {
+            @include short-underline;
+        }
     }
 
     .woocommerce ul.products li.product,
     .woocommerce-page ul.products li.product {
         display: flex;
         flex-direction: column;
-        width: 33%;
+        width: 29%;
+
+        @media(max-width:992px) {
+            width: 50% !important;
+        }
+
+        @media(max-width:768px) {
+            width: 100% !important;
+        }
     }
 
-    .product{
-        .button{
+    .product {
+        .button {
             @include btn-orange;
         }
 
-        .button:hover{
+        .button:hover {
             @include btn-orange-hover;
         }
     }
@@ -61,6 +154,8 @@
 
     .fv-inner {
         text-align: center;
+        max-width: 1160px;
+        width: 100%;
     }
 
     // Plugin Overrides
