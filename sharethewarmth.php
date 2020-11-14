@@ -16,4 +16,15 @@ require_once 'templates/sharethewarmth_checkout.php';
 require_once 'templates/sharethewarmth_myaccount.php';
 require_once 'templates/sharethewarmth_single.php';
 require_once 'templates/sharethewarmth_order-received.php';
+<<<<<<< HEAD
 require_once 'templates/sharethewarmth_testimonials.php';
+=======
+
+
+// enqueue the stylesheet
+function fred_victor_user_scripts() {
+    $plugin_url = plugin_dir_url( __FILE__ );
+    wp_enqueue_style( 'fred_victor_style',  $plugin_url . "/assets/css/style.css");
+}
+add_action( 'wp_enqueue_scripts', 'fred_victor_user_scripts' );
+>>>>>>> b68e993064a2df6f5b5a677a4e70a051081d8b11
