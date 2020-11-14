@@ -11,6 +11,6 @@ Create a e-commerce portal for Fred Victor to manage product donations
 - Mark Berg
 - Sierra Katrian
 - Josh McCormick
+- Vanessa Nevdashenko
 - Bryan Stephens
 - Kaitlin Thatcher
-- Vanessa Vevdashenko
