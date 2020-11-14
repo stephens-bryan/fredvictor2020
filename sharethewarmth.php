@@ -13,5 +13,7 @@ Author URI: https://www.fredvictor.org/
 require_once 'templates/sharethewarmth_archive.php';
 require_once 'templates/sharethewarmth_cart.php';
 require_once 'templates/sharethewarmth_checkout.php';
+require_once 'templates/sharethewarmth_myaccount.php';
 require_once 'templates/sharethewarmth_single.php';
 require_once 'templates/sharethewarmth_order-received.php';
+require_once 'templates/sharethewarmth_testimonials.php';
