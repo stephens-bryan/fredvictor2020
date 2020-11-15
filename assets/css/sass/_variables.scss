@@ -1,10 +1,12 @@
 $red: #e45a20;
-$orange:  #F48024;
+$orange: #F48024;
 $blue: #408aca;
 $yellow: #d6de5c;
 $white: #fff;
 $black : #000000;
 $grey : #DFDFDF;
+$lightgrey : #A2A2A2;
+$darkgrey: #ADADAD;
 
 @mixin hide-element {
     position: absolute;
@@ -12,8 +14,8 @@ $grey : #DFDFDF;
     left: -10000px;
 }
 
-@mixin btn-orange{
-    background:$orange;
+@mixin btn-orange {
+    background: $orange;
     color: $white;
     border: 2px solid $orange;
     border-radius: 50px;
@@ -22,15 +24,16 @@ $grey : #DFDFDF;
     margin: auto;
     font-weight: 200;
     font-size: 15px;
+    text-transform: uppercase;
 }
 
-@mixin btn-orange-hover{
-    background:$white;
+@mixin btn-orange-hover {
+    background: $white;
     color: $orange;
     border: 2px solid $orange;
 }
 
-@mixin short-underline{
+@mixin short-underline {
     content: "";
     position: absolute;
     left: 0;
