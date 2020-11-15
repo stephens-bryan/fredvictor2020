@@ -244,8 +244,8 @@ function sharethewarmth_testimonials_function( $atts ) {
 
     if ( have_rows('testimonials', $a['id']) && get_post_status($a['id']) == 'publish') {
         if (!wp_script_is( 'fv_testimonials', 'enqueued' )) {
-            wp_enqueue_style( 'fv_jquery-ui-style' );
-            wp_enqueue_script( 'fv_jquery-ui-js' );
+            wp_enqueue_style( 'fv_bootstrap-style' );
+            wp_enqueue_script( 'fv_bootstrap-js' );
             wp_enqueue_script( 'fv_testimonials' );
         }
     ?>
