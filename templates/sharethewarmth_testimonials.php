@@ -278,10 +278,10 @@ function sharethewarmth_testimonials_function( $atts ) {
                     <div class="text-left">
                         <img class="mb-3 mb-lg-4 quote-up" src="<?php echo plugin_dir_url( __DIR__ ); ?>/assets/images/quote-up.svg" alt="" width="50" height="56">
                         <p class="font-italic mb-3 mb-lg-4">
-                            <?php if ($include_media == 'none' && strlen($testimonial) < 600) { ?>
+                            <?php if ($include_media == 'none' && strlen($testimonial) < 400) { ?>
                                 <?php echo $testimonial; ?>
                             <?php } else { ?>
-                                <?php echo (strlen($testimonial) > 600 ? substr($testimonial, 0, 600) : substr($testimonial, 0, (strlen($testimonial) / 2))); ?>
+                                <?php echo (strlen($testimonial) > 600 ? substr($testimonial, 0, 400) : substr($testimonial, 0, (strlen($testimonial) / 2))); ?>
                                 &hellip;
                                 <button type="button" class="stw-read-more" data-toggle="modal" data-target="#testimonials_modal_<?php echo $a['id']; ?>" data-testimonial="<?php echo $testimonial; ?>" data-name="<?php echo $name; ?>" data-additionalinfo="<?php echo $additional_info; ?>" data-mediatype="<?php echo $include_media; ?>" data-media="<?php echo $media; ?>"><?php echo __( 'Read More', 'sharethewarmth' ); ?>&nbsp;&nbsp;<span aria-hidden="true" class="fas fa-chevron-right"></span></button>
                             <?php } ?>
