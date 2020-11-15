@@ -33,6 +33,25 @@ $darkgrey: #ADADAD;
     border: 2px solid $orange;
 }
 
+@mixin btn-blue {
+    background: $blue;
+    color: $white;
+    border: 2px solid $blue;
+    border-radius: 50px;
+    transition: all 0.6s ease;
+    min-width: 220px;
+    margin: auto;
+    font-weight: 200;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+@mixin btn-blue-hover {
+    background: $white;
+    color: $blue;
+    border: 2px solid $blue;
+}
+
 @mixin short-underline {
     content: "";
     position: absolute;
