@@ -1,3 +1,75 @@
-body.single-product {
+.woocommerce-single-product {
+
+    // Theme overrides
+    .single-news-item-inner,
+    .back-to-news,
+    .swp_social_panel,
+    .single-content h1 {
+        @include hide-element;
+    }
+
+    .product_title {
+        position: relative !important;
+        visibility: visible !important;
+        left: unset !important;
+        font-size: 35px;
+        margin-bottom: 30px;
+    }
+
+    .fv-inner {
+        max-width: 1160px;
+        width: 100%;
+    }
+
+    // Woocommerce overrides
+    .woocommerce div.product p.price,
+    .woocommerce div.product span.price {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 25px;
+        color: $blue;
+    }
+
+    .woocommerce div.product form.cart {
+        display: flex;
+        align-items: center;
+    }
+
+    .woocommerce .quantity .qty {
+        background: $white;
+        border: 1px solid $lightgrey;
+        border-radius: 7px;
+        color: $black;
+    }
+
+    .woocommerce div.product form.cart .button{
+        @include btn-orange;
+        margin-left: 30px;
+    }
+
+    .woocommerce div.product form.cart .button:hover {
+        @include btn-orange-hover;
+    }
+
+    // Original
+    .woo-backlink {
+        padding: 100px 0 30px;
+
+        a,
+        a:visited {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            color: $darkgrey;
+            text-decoration: none;
+            transition: all 0.6s ease-in;
+
+            &:hover {
+                color: $blue;
+            }
+        }
+    }
 
 }
