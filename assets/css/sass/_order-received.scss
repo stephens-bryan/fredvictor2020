@@ -1,9 +1,54 @@
-body.woocommerce-order-received {
+body.woocommerce-checkout.woocommerce-order-received {
+	&, #content { position: relative; }
+	.thank-you-graphic {
+		position: relative;
+		left: 0px;
+		bottom: 0px;
+		right: 0px;
+		width: 100%;
+		max-width: unset;
+		height: auto;
+		text-align: center;
+		overflow: hidden;
+		img {
+			position: relative;
+			max-width: unset;
+			left: 50%;
+			bottom: -20px;
+			right: 0px;
+			width: 350%;
+	    	transform: translateX(-45%);
+			@media (min-width: 576px) {
+		    	width: 228%;
+		    	transform: translateX(-47%);
+		    }
+		    @media (min-width: 768px) {
+		    	width: 220%;
+		    	transform: translateX(-48%);
+		    }
+		    @media (min-width: 992px) {
+		    	width: 200%;
+		    	transform: translateX(-49%);
+		    }
+			@media (min-width: 1200px) {
+		    	width: 180%;
+		    	transform: translateX(-52.5%);
+		    }
+		}
+	}
+	.single-content {
+		margin-bottom: 0;
+	}
+	section.inner-header .fv-inner h1 {
+		text-transform: capitalize;
+		@media (min-width: 992px) {
+	    	font-size: 56px;
+	    }
+	}
+
 	.woocommerce table.shop_table  {
 		@include table;
-		@media (max-width: 767.98px) {
-	    	// @include no-more-tables;
-	    }
+
 	}
 	.woocommerce-order-details__title {
 		margin-bottom: -1px;
@@ -35,14 +80,14 @@ body.woocommerce-order-received {
 					}
 		        }
 			}
-			.woocommerce-column__title {
-				@include table-title;
-			}
-			address {
-				flex-grow: 1;
-				@include table;
-				@include table-border;
-			}
+		}
+		.woocommerce-column__title {
+			@include table-title;
+		}
+		address {
+			flex-grow: 1;
+			@include table;
+			@include table-border;
 		}
 	}
 	ul.order_details {
@@ -54,14 +99,36 @@ body.woocommerce-order-received {
 			font-size: 14px;
 		}
 	}
-	.site-content:after {
-		display: block;
-		margin-top: -100px;
-		overflow: visible;
-		height: 70vh;
-		background-image: url('../images/thank-you-page-lg.png');
+	section.inner-header {
+		background-image: url('../images/thank-you-page-banner.jpg') !important;
 		background-position: center top;
 		background-size: cover;
 		background-repeat: no-repeat;
+
+		display: flex !important;
+		align-items: center;
+		&.show-mobile{
+            display: none !important;
+        }
+		.fv-inner {
+			text-align: center;
+			// padding: 120px 0;
+			// @media (min-width: 576px) {
+		    	padding: 60px 0;
+		    // }
+		    @media (min-width: 768px) {
+		    	padding: 80px 0;
+		    }
+		    @media (min-width: 992px) {
+		    	padding: 100px 0;
+		    }
+		    @media (min-width: 1200px) {
+		    	padding: 120px 0;
+		    }
+		}
+		h1 {
+			padding: 0;
+			margin: 0;
+		}
 	}
 }

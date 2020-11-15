@@ -1,4 +1,4 @@
-.woocommerce-checkout{
+body.woocommerce-checkout:not(.woocommerce-order-received) {
     p.form-row{
         margin-bottom: 20px !important;
     }
@@ -138,7 +138,7 @@
         font-size: 12px;
         letter-spacing: 1px;
         text-transform: uppercase;
-        font-weight: 700;  
+        font-weight: 700;
     }
     td.product-total, .cart-subtotal, .order-total{
         color: #414042;
@@ -213,7 +213,7 @@
         width: 100% !important;
     }
     p{
-        font-size: 12px; 
+        font-size: 12px;
         font-family: Lato, Arial,sans-serif;
         font-weight: 400;
         color: #414042;
