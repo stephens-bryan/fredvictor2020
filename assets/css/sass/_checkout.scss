@@ -1,0 +1,232 @@
+.woocommerce-checkout{
+    p.form-row{
+        margin-bottom: 20px !important;
+    }
+    section.inner-header{
+        background-image: url('../images/checkout-background.png') !important;
+        min-height: 180px;
+        height: auto;
+        display: flex !important;
+        align-items: center;
+        &.show-mobile{
+            display: none!important;
+        }
+        .fv-inner{
+            text-align: center;
+            h1{
+                size: 82px;
+                font-weight: 700;
+                text-transform: uppercase;
+                text-shadow: none;
+                margin: unset;
+                padding: 20px 0;
+            }
+        }
+    }
+    .single-content{
+        .swp_social_panel{
+            display: none;
+        }
+    }
+    #customer_details {
+        .col-1{
+            width: 100%;
+            max-width: unset;
+            position: relative;
+            z-index: 2;
+            padding: 0;
+        }
+    }
+    .woocommerce-billing-fields{
+        h3{
+            color: #fff;
+            background: #4E84C4;
+            padding: 10px 35px;
+            font-size: 12px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-family: Lato, Arial,sans-serif;
+            margin-bottom: 10px;
+        }
+    }
+    .woocommerce form .form-row label{
+        font-family: Lato, Arial,sans-serif;
+        color: #000000;
+        font-size: 12px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+    .woocommerce form .form-row .required{
+       display: none;
+    }
+    .col-2{
+        max-width: unset;
+        float: unset !important;
+        width: 100% !important;
+        padding: 0;
+    }
+    .woocommerce-additional-fields{
+        margin-top: 40px;
+        h3{
+            color: #fff;
+            background: #4E84C4;
+            padding: 10px 35px;
+            font-size: 12px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-family: Lato, Arial,sans-serif;
+            margin-bottom: 10px;
+        }
+    }
+    .woocommerce form .form-row input.input-text, .woocommerce form .form-row textarea{
+        height: 41px;
+        border: 1px solid #D0D0D0;
+        border-radius: 2px;
+        color: #414402;
+        font-size: 12px;
+        line-height: 14.4px;
+        font-weight: 400;
+        padding: 2px 10px;
+    }
+    .woocommerce form .form-row textarea{
+        padding: 10px;
+        min-height: 150px;
+    }
+    .select2-container--default{
+        .select2-selection{
+            border: 1px solid #D0D0D0;
+            border-radius: 2px;
+            height: 41px;
+            .select2-selection__rendered{
+                line-height: 41px;
+                color: #414402;
+                font-size: 12px;
+            }
+        }
+    }
+    .select2-container--default .select2-selection--single .select2-selection__arrow b{
+        top: 70%;
+        left: 0;
+    }
+    #order_review_heading{
+        color: #fff;
+        background: #4E84C4;
+        padding: 10px 35px;
+        font-size: 12px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        font-family: Lato, Arial,sans-serif;
+        margin-bottom: 0;
+    }
+    th.product-name, th.product-total{
+        font-family: Lato, Arial,sans-serif;
+        color: #000000;
+        font-size: 12px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+    td.product-name{
+        color: #767676;
+        font-size: 12px;
+        font-weight: 700;
+    }
+    .cart-subtotal th, .order-total th{
+        font-family: Lato, Arial,sans-serif;
+        color: #000000;
+        font-size: 12px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-weight: 700;  
+    }
+    td.product-total, .cart-subtotal, .order-total{
+        color: #414042;
+        font-size: 12px;
+        font-weight: 700;
+    }
+    #payment:before{
+        margin-top: 50px;
+        display: block;
+        content: 'Payment Information';
+        color: #fff;
+        background: #4E84C4;
+        padding: 10px 35px;
+        font-size: 12px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        font-family: Lato, Arial,sans-serif;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    #payment{
+        background: #fff !important;
+        div.payment_box{
+            background-color: #fff !important;
+            &:before{
+                display: none !important;
+            }
+        }
+        ul.payment_methods{
+            border-bottom: none !important;
+        }
+        .payment_box.payment_method_iats{
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+        .form-row.place-order{
+            margin-top: 0 !important;
+            padding-top: 0 !important;
+        }
+        .woocommerce-privacy-policy-text{
+            padding-bottom: 5px;
+            border-bottom: 1px solid #eee;
+            margin-bottom: 30px;
+            a{
+                color: #414042;
+            }
+        }
+    }
+    label{
+        font-family: Lato, Arial,sans-serif;
+        color: #000000;
+        font-size: 12px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+    input{
+        height: 41px;
+        border: 1px solid #D0D0D0;
+        border-radius: 2px;
+        color: #414402;
+        font-size: 12px;
+        line-height: 14.4px;
+        font-weight: 400;
+        padding: 2px 10px;
+        vertical-align: middle;
+    }
+    input::placeholder{
+        display: none;
+    }
+    #iats-card-cvc{
+        width: 100% !important;
+    }
+    p{
+        font-size: 12px; 
+        font-family: Lato, Arial,sans-serif;
+        font-weight: 400;
+        color: #414042;
+    }
+    button[type="submit"]{
+        background: #F48024 !important;
+        border-radius: 50px !important;
+        color: #fff !important;
+        padding: 15px 95px !important;
+        font-weight: 300 !important;
+        transition: 0.3s;
+        &:hover{
+            opacity: 0.8;
+        }
+    }
+}
