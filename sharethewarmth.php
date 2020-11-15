@@ -33,6 +33,7 @@ function fred_victor_user_scripts() {
     wp_enqueue_style( 'fv_font-awesome-style');
 
     wp_register_script( 'fv_bootstrap-js',  "//stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" , '', '', true );
+    wp_enqueue_script( 'fv_bootstrap-js' );
     wp_register_script( 'fv_testimonials',  $plugin_url . "/assets/js/testimonials.js" , '', '', true);
     wp_enqueue_script( 'fv_order-received',  $plugin_url . "/assets/js/order-received.js" , '', '', true);
     wp_localize_script( 'fv_order-received', 'fv_or', array(
