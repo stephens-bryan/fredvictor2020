@@ -140,6 +140,7 @@
   margin: auto;
   font-weight: 200;
   font-size: 15px;
+  text-transform: uppercase;
 }
 .woocommerce-shop-page .product .button:hover {
   background: #fff;
@@ -160,6 +161,79 @@
   position: absolute;
   visibility: hidden;
   left: -10000px;
+}
+
+.woocommerce-single-product .single-news-item-inner,
+.woocommerce-single-product .back-to-news,
+.woocommerce-single-product .swp_social_panel,
+.woocommerce-single-product .single-content h1 {
+  position: absolute;
+  visibility: hidden;
+  left: -10000px;
+}
+.woocommerce-single-product .product_title {
+  position: relative !important;
+  visibility: visible !important;
+  left: unset !important;
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+.woocommerce-single-product .fv-inner {
+  max-width: 1160px;
+  width: 100%;
+}
+.woocommerce-single-product .woocommerce div.product p.price,
+.woocommerce-single-product .woocommerce div.product span.price {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  color: #408aca;
+}
+.woocommerce-single-product .woocommerce div.product form.cart {
+  display: flex;
+  align-items: center;
+}
+.woocommerce-single-product .woocommerce .quantity .qty {
+  background: #fff;
+  border: 1px solid #A2A2A2;
+  border-radius: 7px;
+  color: #000000;
+}
+.woocommerce-single-product .woocommerce div.product form.cart .button {
+  background: #F48024;
+  color: #fff;
+  border: 2px solid #F48024;
+  border-radius: 50px;
+  transition: all 0.6s ease;
+  min-width: 220px;
+  margin: auto;
+  font-weight: 200;
+  font-size: 15px;
+  text-transform: uppercase;
+  margin-left: 30px;
+}
+.woocommerce-single-product .woocommerce div.product form.cart .button:hover {
+  background: #fff;
+  color: #F48024;
+  border: 2px solid #F48024;
+}
+.woocommerce-single-product .woo-backlink {
+  padding: 100px 0 30px;
+}
+.woocommerce-single-product .woo-backlink a,
+.woocommerce-single-product .woo-backlink a:visited {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  color: #ADADAD;
+  text-decoration: none;
+  transition: all 0.6s ease-in;
+}
+.woocommerce-single-product .woo-backlink a:hover,
+.woocommerce-single-product .woo-backlink a:visited:hover {
+  color: #408aca;
 }
 
 /*# sourceMappingURL=style.css.map */
