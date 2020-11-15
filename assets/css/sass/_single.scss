@@ -72,6 +72,10 @@
         height: 1px;
         width: 74%;
         transform: translateY(-16px);
+
+        @media(max-width:1122px){
+            visibility: hidden;
+        }
     }
 
     .woocommerce-loop-product__title:before {
@@ -113,6 +117,22 @@
 
         @media(max-width:768px) {
             width: 100% !important;
+        }
+    }
+
+    .woocommerce ul.products li.product a img{
+        height: 300px;
+        object-fit: contain;
+        width: 300px;
+        margin: auto;
+    }
+
+    .woocommerce div.product div.images img{
+        @media(max-width:768px){
+            height: 300px;
+            object-fit: contain;
+            width: 300px;
+            margin: auto;
         }
     }
 
