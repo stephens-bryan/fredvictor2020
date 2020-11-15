@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-#sharethewarmth_testimonials .embed-container{position:relative;padding-bottom:56.25%;overflow:hidden;max-width:100%;height:auto}#sharethewarmth_testimonials .embed-container iframe,#sharethewarmth_testimonials .embed-container object,#sharethewarmth_testimonials .embed-container embed{position:absolute;top:0;left:0;width:100%;height:100%}/*# sourceMappingURL=style.css.map */
-=======
 .woocommerce-shop-page p {
   font-family: Roboto;
   font-style: normal;
@@ -239,5 +236,21 @@
   color: #408aca;
 }
 
+#sharethewarmth_testimonials .embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+  max-width: 100%;
+  height: auto;
+}
+#sharethewarmth_testimonials .embed-container iframe,
+#sharethewarmth_testimonials .embed-container object,
+#sharethewarmth_testimonials .embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 /*# sourceMappingURL=style.css.map */
->>>>>>> b68e993064a2df6f5b5a677a4e70a051081d8b11
