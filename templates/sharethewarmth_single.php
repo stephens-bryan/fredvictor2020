@@ -57,6 +57,7 @@ add_action( 'woocommerce_before_single_product_summary', 'woo_add_continue_shopp
 function woo_add_continue_shopping_button_to_cart() {
     $shop_page_url = get_permalink( woocommerce_get_page_id( 'shop' ) );
     echo '<div class="woo-backlink">';
+<<<<<<< HEAD
     echo ' <a href="'.$shop_page_url.'" class=""><span aria-hidden="true" class="fas fa-chevron-left"></span>&nbsp;&nbsp;Back to Shop</a>';
     echo '</div>';
 }
@@ -99,6 +100,9 @@ function woocommerce_product_custom_fields() {
             'label' => __('Custom Product Textarea', 'woocommerce')
         )
     );
+=======
+    echo ' <a href="'.$shop_page_url.'" class=""><span class="fas fa-angle-left woo-back-icon"></span>Back to Shop</a>';
+>>>>>>> 3c5d96d5e2f1af3f7161981584504e718b7fbbda
     echo '</div>';
 
 }
