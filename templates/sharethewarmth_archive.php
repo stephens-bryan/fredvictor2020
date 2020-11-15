@@ -3,6 +3,9 @@
 add_filter( 'body_class','stw_woo_shop_classes' );
 function stw_woo_shop_classes( $classes ) {
 
+if( is_product() ){
+    $classes[] = "woocommerce-single-product";
+}
 
 if( is_shop() || is_product_category()){
     $classes[] = "woocommerce-shop-page";
