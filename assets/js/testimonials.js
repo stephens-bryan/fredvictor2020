@@ -8,12 +8,6 @@ jQuery( function($) {
         media = button.attr('data-media'),
         embed_media = '';
 
-        console.log(testimonial);
-        console.log(name);
-        console.log(additional_info);
-        console.log(media_type);
-        console.log(media);
-
         if (media_type == 'video') {
             embed_media = '\
             <div class="embed-container">\
