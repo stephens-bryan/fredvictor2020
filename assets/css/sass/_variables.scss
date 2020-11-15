@@ -13,6 +13,23 @@ $darkgrey: #ADADAD;
     visibility: hidden;
     left: -10000px;
 }
+@mixin button {
+    border-radius: 50px;
+    transition: all 0.6s ease;
+    min-width: 220px;
+    // height: 45px;
+    margin: auto;
+    font-weight: 300;
+    font-size: 15px;
+    text-transform: uppercase;
+    outline: none !important;
+    &:focus,
+    &:active,
+    &:hover,
+    &:hover:focus {
+        outline: none !important;
+    }
+}
 
 @mixin btn-orange {
     background: $orange;
@@ -21,10 +38,20 @@ $darkgrey: #ADADAD;
     border-radius: 50px;
     transition: all 0.6s ease;
     min-width: 220px;
+    height: 45px;
     margin: auto;
     font-weight: 200;
     font-size: 15px;
     text-transform: uppercase;
+    outline: none !important;
+    &:focus,
+    &:active,
+    &:hover,
+    &:hover:focus {
+        background: $white;
+        color: $orange;
+        border: 2px solid $orange;
+    }
 }
 
 @mixin btn-orange-hover {
@@ -61,4 +88,52 @@ $darkgrey: #ADADAD;
     height: 1px;
     width: 100%;
     top: 2em;
+}
+
+@mixin table-border {
+    border: 1px solid #dddddd;
+}
+
+@mixin table {
+    border-radius: 0 !important;
+    border-collapse: collapse !important;
+    outline: none !important;
+    font-weight: 700;
+    font-size: 12px;
+    @media (min-width: 576px) {
+        font-size: 14px;
+    }
+    th {
+        font-family: Lato, Arial,sans-serif;
+        color: #000000;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+    tbody {
+        td {
+            color: #767676;
+            a {
+                text-decoration: none !important;
+            }
+        }
+    }
+    tbody th,
+    tfoot td,
+    tfoot th {
+        @include table-border;
+    }
+}
+
+@mixin table-title {
+    margin-top: 50px;
+    margin-bottom: -1px;
+    display: block;
+    color: #fff;
+    background: #4E84C4;
+    padding: 10px 35px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: Lato, Arial,sans-serif;
+    width: 100%;
 }

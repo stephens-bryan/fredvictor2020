@@ -45,11 +45,6 @@ body.woocommerce-checkout.woocommerce-order-received {
 	    	font-size: 56px;
 	    }
 	}
-
-	.woocommerce table.shop_table  {
-		@include table;
-
-	}
 	.woocommerce-order-details__title {
 		margin-bottom: -1px;
 		@include table-title;
@@ -100,7 +95,7 @@ body.woocommerce-checkout.woocommerce-order-received {
 		}
 	}
 	section.inner-header {
-		background-image: url('../images/thank-you-page-banner.jpg') !important;
+		background: url('../images/thank-you-page-banner.jpg') center top / cover no-repeat, linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(0,0,0,0.2) 75%, rgba(0,0,0,.425) 100%) !important;
 		background-position: center top;
 		background-size: cover;
 		background-repeat: no-repeat;
