@@ -58,6 +58,6 @@ add_action( 'woocommerce_before_single_product_summary', 'woo_add_continue_shopp
 function woo_add_continue_shopping_button_to_cart() {
     $shop_page_url = get_permalink( woocommerce_get_page_id( 'shop' ) );
     echo '<div class="woo-backlink">';
-    echo ' <a href="'.$shop_page_url.'" class="">Back to Shop</a>';
+    echo ' <a href="'.$shop_page_url.'" class=""><span class="fas fa-angle-left woo-back-icon"></span>Back to Shop</a>';
     echo '</div>';
 }
