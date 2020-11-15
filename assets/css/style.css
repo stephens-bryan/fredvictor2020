@@ -291,10 +291,10 @@ body.woocommerce-cart table.shop_table tfoot td,
 body.woocommerce-cart table.shop_table tfoot th {
   border: 1px solid #dddddd;
 }
-body.woocommerce-cart .cart_totals.calculated_shipping {
-  width: 100%;
+body.woocommerce-cart .cart_totals {
+  width: 100% !important;
 }
-body.woocommerce-cart .cart_totals.calculated_shipping h2 {
+body.woocommerce-cart .cart_totals h2 {
   margin-top: 50px;
   margin-bottom: -1px;
   display: block;
@@ -308,7 +308,8 @@ body.woocommerce-cart .cart_totals.calculated_shipping h2 {
   width: 100%;
   content: "Your Order";
 }
-body.woocommerce-cart .cart_totals.calculated_shipping .cart-subtotal th, body.woocommerce-cart .cart_totals.calculated_shipping .order-total th {
+body.woocommerce-cart .cart_totals .cart-subtotal th,
+body.woocommerce-cart .cart_totals .order-total th {
   font-family: Lato, Arial, sans-serif;
   color: #000000;
   font-size: 14px;
@@ -316,7 +317,7 @@ body.woocommerce-cart .cart_totals.calculated_shipping .cart-subtotal th, body.w
   text-transform: uppercase;
   font-weight: 700;
 }
-body.woocommerce-cart .cart_totals.calculated_shipping tbody td {
+body.woocommerce-cart .cart_totals tbody td {
   color: #767676;
   font-size: 14px;
   font-weight: 700;
@@ -701,6 +702,9 @@ body.woocommerce-checkout:not(.woocommerce-order-received) button[type=submit]:h
 }
 .woocommerce-single-product .woo-backlink {
   padding: 100px 0 30px;
+}
+.woocommerce-single-product .woo-backlink .woo-back-icon {
+  margin-right: 0.2em;
 }
 .woocommerce-single-product .woo-backlink a,
 .woocommerce-single-product .woo-backlink a:visited {
