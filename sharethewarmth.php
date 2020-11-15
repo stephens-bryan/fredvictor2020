@@ -30,6 +30,7 @@ function fred_victor_user_scripts() {
     wp_register_style( 'fv_bootstrap-style',  '//stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css');
     wp_enqueue_style( 'fv_font-awesome-style',  '//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css');
     wp_enqueue_style( 'fred_victor_style',  $plugin_url . "/assets/css/style.css");
+    wp_enqueue_style( 'fv_bootstrap-style' );
 
     wp_register_script( 'fv_bootstrap-js',  "//stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" , '', '', true );
     wp_enqueue_script( 'fv_bootstrap-js' );
