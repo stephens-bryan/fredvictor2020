@@ -3,9 +3,6 @@ add_filter( 'woocommerce_get_availability', 'wcs_custom_get_availability', 1, 2)
 function wcs_custom_get_availability( $availability, $_product ) {
     // Change In Stock Text
     global $product;
-    // var_dump($_product->total_sales);
-    // var_dump($_product->stock_quantity);
-
 	// $koostis = $product->get_attribute( 'goal-number' );
 
     if ( $_product->is_in_stock() ) {
@@ -81,8 +78,6 @@ function woocommerce_product_custom_fields() {
             )
         )
     );
-    echo '</div>';
-
 }
 
 // Save Fields
