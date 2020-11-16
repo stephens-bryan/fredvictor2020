@@ -32,6 +32,10 @@
         color: $blue;
     }
 
+    .woocommerce nav.woocommerce-pagination{
+        order: 3;
+    }
+
     .woocommerce-result-count{
         width: 50%;
         text-align: left;
