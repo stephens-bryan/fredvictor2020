@@ -17,8 +17,6 @@ $darkgrey: #ADADAD;
     border-radius: 50px;
     transition: all 0.6s ease;
     min-width: 220px;
-    // height: 45px;
-    margin: auto;
     font-weight: 300;
     font-size: 15px;
     text-transform: uppercase;
@@ -32,18 +30,10 @@ $darkgrey: #ADADAD;
 }
 
 @mixin btn-orange {
+    @include button;
     background: $orange;
     color: $white;
     border: 2px solid $orange;
-    border-radius: 50px;
-    transition: all 0.6s ease;
-    min-width: 220px;
-    height: 45px;
-    margin: auto;
-    font-weight: 200;
-    font-size: 15px;
-    text-transform: uppercase;
-    outline: none !important;
     &:focus,
     &:active,
     &:hover,
@@ -61,16 +51,10 @@ $darkgrey: #ADADAD;
 }
 
 @mixin btn-blue {
+    @include button;
     background: $blue;
     color: $white;
     border: 2px solid $blue;
-    border-radius: 50px;
-    transition: all 0.6s ease;
-    min-width: 220px;
-    margin: auto;
-    font-weight: 200;
-    font-size: 15px;
-    text-transform: uppercase;
 }
 
 @mixin btn-blue-hover {

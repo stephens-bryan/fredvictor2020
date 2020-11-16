@@ -162,12 +162,12 @@
     .woocommerce-page ul.products li.product {
         display: flex;
         flex-direction: column;
-        width: 29%;
-
+        margin: 0;
+        padding: 15px;
+        width: 33.3333333%;
         @media(max-width:992px) {
             width: 45% !important;
         }
-
         @media(max-width:768px) {
             width: 100% !important;
         }
@@ -176,10 +176,7 @@
     .product {
         .button {
             @include btn-orange;
-        }
-
-        .button:hover {
-            @include btn-orange-hover;
+            margin: 0;
         }
     }
 
