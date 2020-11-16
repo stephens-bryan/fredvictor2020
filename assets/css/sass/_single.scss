@@ -1,4 +1,5 @@
 .woocommerce-single-product {
+
     // Theme overrides
     .single-news-item-inner,
     .back-to-news,
@@ -53,15 +54,19 @@
 
     .related.products .products {
         display: flex;
+        flex-wrap: wrap;
+
         li.product {
             display: flex;
             flex-direction: column;
         }
+
         li.product a:not(.button) {
             flex-grow: 1;
             display: flex;
             flex-direction: column;
         }
+
         .price {
             margin-top: auto;
         }
@@ -88,7 +93,7 @@
         width: 74%;
         transform: translateY(-16px);
 
-        @media(max-width:1122px){
+        @media(max-width:1122px) {
             visibility: hidden;
         }
     }
@@ -105,17 +110,18 @@
         color: $black;
     }
 
-    .type-product .related.products .price{
+    .type-product .related.products .price {
         text-align: center;
         color: $blue;
     }
 
     .woocommerce ul.products li.product {
-        .button{
+        .button {
             @include btn-blue;
             text-align: center;
         }
-        .button:hover{
+
+        .button:hover {
             @include btn-blue-hover;
         }
     }
@@ -127,7 +133,7 @@
         width: 29%;
 
         @media(max-width:992px) {
-            width: 50% !important;
+            width: 45% !important;
         }
 
         @media(max-width:768px) {
@@ -135,15 +141,15 @@
         }
     }
 
-    .woocommerce ul.products li.product a img{
+    .woocommerce ul.products li.product a img {
         height: 300px;
         object-fit: contain;
         width: 300px;
         margin: auto;
     }
 
-    .woocommerce div.product div.images img{
-        @media(max-width:768px){
+    .woocommerce div.product div.images img {
+        @media(max-width:768px) {
             height: 300px;
             object-fit: contain;
             width: 300px;
@@ -155,7 +161,7 @@
     .woo-backlink {
         padding: 100px 0 30px;
 
-        .woo-back-icon{
+        .woo-back-icon {
             margin-right: 0.2em;
         }
 
@@ -174,6 +180,7 @@
             }
         }
     }
+
     .single-content .prev-next,
     .end-horisontal-line {
         display: none !important;
